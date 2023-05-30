@@ -1,0 +1,86 @@
+body{background-color: black;color: white;}
+#fs1{
+    border-color: #3900FE;
+    border-width: 5px;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+#tb1{
+    height: 30%;
+    width: 91%;
+}
+#tb2{
+   
+    height: 15%;
+    width: 125%;
+}
+#lg1{
+    background-color:  #3900FE;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 135px;
+}
+#lg2{
+    background-color:  #3900FE;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 170px;
+}
+fieldset{
+    border-radius: 15px;
+}
+#ssn{
+    background-color: black;
+    border-radius: 5px;
+}
+#fn{
+    background-color: black;
+    border-radius: 5px;
+}
+#SnN{
+    background-color: black;
+    border-radius: 5px;
+}
+#pc{border-radius: 5px;
+    background-color: black;}
+#City{border-radius: 5px;
+    background-color: black;}
+#usr{border-radius: 5px;
+    background-color: black;}
+#pass{border-radius: 5px;
+    background-color: black;}
+#lbps{
+    font-size: 14px;
+    position: relative;
+    bottom: 2px;
+}
+#reg{
+    background-color: #3900FE;
+    color: white;
+    position: relative;
+    top: 22%;
+    left: 32%;
+    border-radius: 5px;
+}
+#td11{
+    background-color: #3900FE;
+    height: 2px;
+    border-radius: 5px;
+    font-size: 11px;
+    width:140px;
+    position: relative;
+    left: -120px;
+}
+#fs2{
+    border-color: #3900FE;
+    border-width: 5px;
+    color: white;
+    width: 40%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    
+}

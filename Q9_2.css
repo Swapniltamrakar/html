@@ -1,0 +1,76 @@
+body{
+    color: white;
+    background-color: #356AA0;
+}
+table {
+    height: 100%;
+    position: relative;
+    left: 15%;
+    width: 110%;
+}
+
+#University {
+    position: relative;
+    left: 15%;
+    width: 300px;
+}
+
+#Institute {
+    position: relative;
+    left: 15%;
+    width: 300px;
+}
+
+fieldset {
+    height: 50%;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    top: 15%;
+}
+
+#sel {
+    position: relative;
+    left: 15%;
+    width: 150px;
+}
+
+#sel1 {
+    position: relative;
+    left: 15%;
+    width: 90px;
+}
+#tt{
+    position: relative;
+    left:-150px;
+}
+#num{
+    position: relative;
+    left: 15%;
+    width: 50px;
+}
+#num1{
+    opacity: 1;
+    position: relative;
+    left: -320px;
+    width: 50px;
+}
+#lab1{
+    position: relative;
+    left: -185px;
+}
+#sems{
+    position: relative;
+    left: -318px;
+}
+#num2{
+    position: relative;
+    left: 15%;
+    width: 60px;
+}
+#eml{
+    position: relative;
+    left: 15%;
+    width: 300px;
+}
