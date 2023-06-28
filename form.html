@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <style>
+        table{
+            border-style: solid;
+            margin: 80px;
+            position: relative;
+        }
+        th{padding-right: 10px;}
+        span {
+            font-size: 12;
+        }
+        h2{
+            position: relative;
+            left: 85px;
+            top: 55;
+            font-weight: normal;
+        }
+        hr{
+            position: absolute;
+            left: 87px;
+            top: 88px;
+            width: 95px;
+        }
+        
+    </style>
+    <script>
+        function validateName(name) {
+            var a = document.getElementById(name).value;
+
+            if (!(a == "") && isNaN(a) && a.length > 2) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function vname() {
+            var a = validateName("name");
+            var b = validateName("lname");
+
+
+            if (!a) {
+                document.getElementById("span").innerHTML = "*Enter a valid id";
+                document.getElementById("span").style.color = "red";
+            }
+            else {
+                document.getElementById("span").innerHTML = "*valid";
+                document.getElementById("span").style.color = "green";
+            }
+
+            if (!b) {
+                document.getElementById("span2").innerHTML = "*Enter a valid id";
+                document.getElementById("span2").style.color = "red";
+            }
+            else {
+                document.getElementById("span2").innerHTML = "*valid";
+                document.getElementById("span2").style.color = "green";
+            }
+        }
+
+        function caller() {
+            vname();
+        }
+    </script>
+    <script>
+        function getColor() {
+            getColorA();
+            getColorB();
+        }
+        function getColorA() {
+            var a = document.getElementById("name").value;
+
+            if (!(a == "") && isNaN(a) && a.length > 2) {
+                document.getElementById("name").style.boxShadow = "1px 1px 1px green";
+            }
+            else {
+                document.getElementById("name").style.boxShadow = "1px 1px 1px red";
+            }
+
+
+        }
+        function getColorB() {
+            var b = document.getElementById("lname").value;
+            if (!(b == "") && isNaN(b) && b.length > 2) {
+                document.getElementById("lname").style.boxShadow = "1px 1px 1px green";
+            }
+            else {
+                document.getElementById("lname").style.boxShadow = "1px 1px 1px red";
+            }
+        }
+    </script>
+
+
+
+</head>
+<h2>TABLE</h2>
+<hr align="left">
+<body>
+    <form>
+        <table border="2px">
+            <tr>
+                <th align="left"><label for="name">NAME: </label></th>
+                <td><input type="text" name="name" id="name" autofocus>
+                    &nbsp;<span id="span"></span>
+                </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="lname">LAST NAME: </label></th>
+                <td><input type="text" name="lname" id="lname" autofocus>
+                    &nbsp;<span id="span2"></span></td>
+            </tr>
+            <tr>
+                <th align="left">Date of birth: </th>
+                <td><input type="date" name="dob" id="dob" required autofocus></td>
+            </tr>
+            <tr>
+                <th align="left"> QUALIFICATION: </th>
+                <td><input type="radio" name="rdo" id="BE"><label for="BE">BE</label><input type="radio" name="rdo"
+                    id="BTECH">
+                <label for="BTECH">BTECH</label><input type="radio" name="rdo" id="MTECH"><label
+                    for="MTECH">MTECH</label></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><button type="button" name="btn" type="btn" onclick="caller()" onmousedown="getColor()">submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
