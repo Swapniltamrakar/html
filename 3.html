@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script src="./3.js"></script>
+    <script>
+        // const myTimeout = setTimeout(myGreeting, 18000);
+
+        // function myGreeting() {
+        //     document.getElementById("bdy").innerHTML = "session timed out!"
+        // }
+        // const timeOut = setTimeout(getTimeout,5000);
+        // function getTimeout(){
+        //     document.getElementById("bdy").innerHTML="session timed out";
+        // }
+    </script>
+
+</head>
+
+<body id="bdy">
+    <form>
+        <table id="tab1">
+            <tr>
+                <td>NAME : </td>
+                <td><input type="text" id="nm" name="nm"></td><td><span id="td1"></span></td>
+            </tr>
+            <tr>
+                <td>LASTNAME : </td>
+                <td><input type="text" id="lnm" name="lnm"></td><td><span id="td2"></span></td>
+            </tr>
+            <tr>
+                <td>EMAIL : </td>
+                <td><input type="email" id="email" name="email"></td><td><span id="td3"></span></td>
+            </tr>
+            <tr>
+                <td>COURSE : </td>
+                <td>
+                    <input type="radio" id="BE" value="BE" name="rdo"><label name="rdo">BE</label>
+                    <input type="radio" id="BTECH" value="BTECH" name="rdo"><label name="rdo">BTECH</label>
+                    <input type="radio" id="MS" value="MS" name="rdo"><label name="rdo">MS</label>
+               
+            </tr>
+            <tr>
+                <td>MOBILENUMBER:</td>
+                <td><input type="text" id="mno" name="mno"></td><td><span id="td4"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    SKILLS:</td>
+                <td>
+                    <input type="checkbox" id="Swimming" value="Swimming" name="skill"><label
+                        name="skill">Swimming</label>
+                    <input type="checkbox" id="Reading" value="Reading" name="skill"><label name="skill">Reading</label>
+                    <input type="checkbox" id="Jogging" value="Jogging" name="skill"><label name="skill">Jogging</label>
+                </td>
+            </tr>
+        </table>
+        <button type="button" id="btn" name="btn" onclick="validName()">SUBMIT</button>
+    </form>
+</body>
+
+</html>
